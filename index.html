@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Resource</title>
+    <link rel="icon" type="image/png" href="./img/scholar_vault_logo 1.1.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- -------------nav-bar-------------- -->
+    <nav>
+        <div class="logo">
+            <img src="./img/scholar_vault_logo 1.1.png" alt="Logo">
+            <h1>SCHOLAR'S VAULT<span class="logo-text">Online College Library</span></h1>
+        </div>
+        <a href="#" class="login-btn">Login <i class="fa-solid fa-arrow-right-to-bracket"></i></a>
+    </nav>
+    <!-- -----------nav-bar end------------- -->
+    
+    <!-- --------------main body---------------- -->
+    <main>
+        <!-- ----------search bar------------- -->
+        <div class="search-bar-box">
+            <div id="txt-grp">
+                Web Library <span id="txt">Search Book Online</span>
+            </div>
+            <div id="search-container">
+                <div id="search-bar">Search for books...</div>
+                <div id="search-icon">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <span>Search</span>  
+                </div>    
+            </div>
+        </div>
+        
+        <div class="scrolling-cards-container">
+            <div class="scrolling-cards">
+                <div class="card card-1"><span class="card-text">Computer Science And Engineering</span></div>
+                <div class="card card-2"><span class="card-text">Information Technology</span></div>
+                <div class="card card-3"><span class="card-text">Electronics And Communication Engineering</span></div>
+                <div class="card card-4"><span class="card-text">Artificial Intelligence And Data Science</span></div>
+                <div class="card card-5"><span class="card-text">Mechatronics Engineering</span></div>
+                <div class="card card-6"><span class="card-text">Civil Engineering</span></div>
+                <div class="card card-7"><span class="card-text">Mechanical Engineering</span></div>
+                <div class="card card-8"><span class="card-text">Industrial And Production</span></div>
+                <div class="card card-9"><span class="card-text">Non-Academic</span></div>
+            </div>
+        
+            <!-- Duplicate of the scrolling cards for infinite effect -->
+            <div class="scrolling-cards">
+                <div class="card card-1"><span class="card-text">Computer Science And Engineering</span></div>
+                <div class="card card-2"><span class="card-text">Information Technology</span></div>
+                <div class="card card-3"><span class="card-text">Electronics And Communication Engineering</span></div>
+                <div class="card card-4"><span class="card-text">Artificial Intelligence And Data Science</span></div>
+                <div class="card card-5"><span class="card-text">Mechatronics Engineering</span></div>
+                <div class="card card-6"><span class="card-text">Civil Engineering</span></div>
+                <div class="card card-7"><span class="card-text">Mechanical Engineering</span></div>
+                <div class="card card-8"><span class="card-text">Industrial And Production</span></div>
+                <div class="card card-9"><span class="card-text">Non-Academic</span></div>
+            </div>
+        </div>
+        
+    </main>
+
+    <div id="search-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div class="model-side-bar">
+                <img src="./img/domain-choose.svg" alt="">
+            </div>
+            <div class="bubble-container">
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img1.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">CSE</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img2.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">IT</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img3.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">ECE</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img4.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">AIADS</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img4.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">MT</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img4.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">CE</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img4.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">ME</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img4.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">IP</span>
+                </div>
+                <div>
+                    <div class="modal-img">
+                        <img src="./img/img4.png" height="100px" alt="">
+                    </div><br>
+                    <span class="category">Non-Academin</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------main body end------------------ -->
+
+    <!-- --------------footer------------------ -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: library@college.edu</p>
+                <p>Phone: +91 98765 43210</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Library Resource Center
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
