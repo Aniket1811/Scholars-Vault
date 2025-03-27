@@ -1,7 +1,11 @@
 *{
     overflow-x: hidden;
     overflow-y: auto;
-    scrollbar-width: none;
+        /* scrollbar-width: none; For Firefox */
+    }
+    
+    *::-webkit-scrollbar {
+        display: none; /* For Chrome, Safari, and Edge */
 }
 
 body {
@@ -57,7 +61,7 @@ nav::before {
 }
 
 .logo h1 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     display: flex;
     flex-direction: column;
     line-height: 1.2;
@@ -69,15 +73,19 @@ nav::before {
 }
 
 /* Login Button */
-.login-btn {
+.login-btn{
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.5em;
     transition: color 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 .login-btn:hover {
-    color: #b7e4c7;
+    color: red;
 }
 
 /* main body */
@@ -105,8 +113,9 @@ main{
 }
 
 #txt-grp{
-    font-size: 3.5em;
-    font-weight: 10px;
+    font-family: "Poppins", sans-serif;
+    font-size: 4em;
+    font-weight: 800;
     color: #153829;
 }
 
@@ -213,6 +222,7 @@ main{
     width: 100%;
     padding: 15px;
     background: rgba(0, 0, 0, 0.6);
+    -webkit-backdrop-filter: blur(12px); /* Safari support */
     backdrop-filter: blur(12px);
     text-align: center;
     font-size: 1.1em;
@@ -303,7 +313,6 @@ main{
     object-fit: cover; /* Crops the image to fit without distortion */
 }
 
-
 .close-btn {
     position: absolute;
     top: 10px;
@@ -390,6 +399,7 @@ footer {
 .social-icons a[href*="instagram"]:hover {
     background: linear-gradient(45deg, #F58529, #FEDA77, #DD2A7B,#8134AF,#515BD4);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -397,6 +407,7 @@ footer {
 .social-icons a[href*="facebook"]:hover {
     background: linear-gradient(to top, #0165E1, #17A9FD);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
