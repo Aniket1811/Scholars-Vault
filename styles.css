@@ -299,11 +299,7 @@ main{
     height: 150px; /* Set height (same as width for a perfect circle) */
     border-radius: 50%; /* Makes it circular */
     overflow: hidden; /* Ensures the image does not overflow */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
     border: 3px solid black; /* Black border */
-    /* padding: 10px; */
     margin: 10px 0;
 }
 
@@ -311,7 +307,13 @@ main{
     width: 100%; /* Makes the image fill the div */
     height: 100%; /* Ensures full height */
     object-fit: cover; /* Crops the image to fit without distortion */
+    transition: transform 0.3s ease-in-out; /* Smooth hover effect */
 }
+
+.modal-img:hover img {
+    transform: scale(1.2);
+}
+
 
 .close-btn {
     position: absolute;
